@@ -31,6 +31,9 @@ namespace TarodevController
         private bool _grounded;
         private ParticleSystem.MinMaxGradient _currentGradient;
 
+        // change direction for attacks
+        public bool facingRight = true;
+
         private void Awake()
         {
             _source = GetComponent<AudioSource>();
@@ -68,7 +71,11 @@ namespace TarodevController
 
         private void HandleSpriteFlip()
         {
-            if (_player.FrameInput.x != 0) _sprite.flipX = _player.FrameInput.x < 0;
+            if (_player.FrameInput.x != 0) 
+            {
+                _sprite.flipX = _player.FrameInput.x < 0;
+                facingRight = false;
+            }
         }
 
         private void HandleIdleSpeed()
