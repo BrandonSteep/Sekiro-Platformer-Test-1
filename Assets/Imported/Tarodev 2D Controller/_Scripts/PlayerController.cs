@@ -19,6 +19,7 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
+        private bool _isRunning = false;
 
         #region Interface
 
@@ -156,13 +157,16 @@ namespace TarodevController
         {
             if (_frameInput.Move.x == 0)
             {
+                _isRunning = false;
                 var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
             }
             else
             {
+                _isRunning = true;
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
             }
+            Debug.Log($"Is Running = {_isRunning}");
         }
 
         #endregion
@@ -185,7 +189,11 @@ namespace TarodevController
 
         #endregion
 
-        private void ApplyMovement() => _rb.velocity = _frameVelocity;
+        private void ApplyMovement() => _rb.velocity = _frameVelocity;        
+
+        public bool IsRunning(){
+            return _isRunning;
+        }
 
 #if UNITY_EDITOR
         private void OnValidate()
