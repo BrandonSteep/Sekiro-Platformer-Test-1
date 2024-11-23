@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 09e43ada499e65e46ba82326f9688edf
+guid: dfc2901ba1ada8f42a0a475bad8ca527
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack1_edited_0
+      name: run_edited_0
       rect:
         serializedVersion: 2
         x: 0
         y: 235
-        width: 160
+        width: 134
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51f06bef26eaebc47a1cca5f598c4aea
-      internalID: 1052116261
+      spriteID: 0d4f375e559877d418b123c6e4862f2a
+      internalID: 422456142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack1_edited_1
+      name: run_edited_1
       rect:
         serializedVersion: 2
         x: 0
         y: 188
-        width: 160
+        width: 134
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b437239f4ee4664bb765b37073477f7
-      internalID: 2000206261
+      spriteID: aec5cbfbdfdd6ca4182fb547c9ff612b
+      internalID: 1238824182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack1_edited_2
+      name: run_edited_2
       rect:
         serializedVersion: 2
         x: 0
         y: 141
-        width: 160
+        width: 134
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe03dee3b906cea41a42d3146480e590
-      internalID: -345278493
+      spriteID: 23dc2dbac362a994589b7ece36dfaed0
+      internalID: 459220380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack1_edited_3
+      name: run_edited_3
       rect:
         serializedVersion: 2
         x: 0
         y: 94
-        width: 160
+        width: 134
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a492f5337539b374fa5e3e009b08712f
-      internalID: -476980193
+      spriteID: 0b2a72c180152b749bf2ad49681ee32b
+      internalID: 1553269419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack1_edited_4
+      name: run_edited_4
       rect:
         serializedVersion: 2
         x: 0
         y: 47
-        width: 160
+        width: 134
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f807c35537fb6478e6b88dc8c464ea
-      internalID: -275045999
+      spriteID: eec1482f3a0b332478d1ec35d83e512e
+      internalID: -1554662349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack1_edited_5
+      name: run_edited_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
+        width: 134
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 807f632a573ae6b4386a6f1424c24edc
-      internalID: 833754992
+      spriteID: d31259313b6a3274b97354da4a9a2349
+      internalID: 98639425
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      attack1_edited_0: 1052116261
-      attack1_edited_1: 2000206261
-      attack1_edited_2: -345278493
-      attack1_edited_3: -476980193
-      attack1_edited_4: -275045999
-      attack1_edited_5: 833754992
+      run_edited_0: 422456142
+      run_edited_1: 1238824182
+      run_edited_2: 459220380
+      run_edited_3: 1553269419
+      run_edited_4: -1554662349
+      run_edited_5: 98639425
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

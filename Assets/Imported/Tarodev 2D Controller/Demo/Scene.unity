@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: _sprite
       value: 
       objectReference: {fileID: 218600815}
+    - target: {fileID: 2969068311962969431, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: _maxTilt
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 2969068313154050964, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_IsActive
       value: 0
