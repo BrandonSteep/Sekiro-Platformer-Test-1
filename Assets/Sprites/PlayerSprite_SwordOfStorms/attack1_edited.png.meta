@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86a1cbd13cad5b24bb544f8f22aa7fa8
+guid: 09e43ada499e65e46ba82326f9688edf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: attack1_edited_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 235
+        width: 160
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f06bef26eaebc47a1cca5f598c4aea
+      internalID: 1052116261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_edited_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 160
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b437239f4ee4664bb765b37073477f7
+      internalID: 2000206261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_edited_2
       rect:
         serializedVersion: 2
         x: 0
         y: 141
-        width: 30
+        width: 160
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512286eee4bad8243bdd8551f98af511
-      internalID: 234507135
+      spriteID: fe03dee3b906cea41a42d3146480e590
+      internalID: -345278493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: attack1_edited_3
       rect:
         serializedVersion: 2
         x: 0
         y: 94
-        width: 30
+        width: 160
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5a4c63d534f0744abec1800ec3fa12f
-      internalID: 558677437
+      spriteID: a492f5337539b374fa5e3e009b08712f
+      internalID: -476980193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: attack1_edited_4
       rect:
         serializedVersion: 2
         x: 0
         y: 47
-        width: 30
+        width: 160
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28d0f9b66b9586b4caa72ecc2e8268aa
-      internalID: -1616708430
+      spriteID: 72f807c35537fb6478e6b88dc8c464ea
+      internalID: -275045999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: attack1_edited_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
+        width: 160
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7602cf6f24f179d4195467c41b8bd0db
-      internalID: -183801195
+      spriteID: 807f632a573ae6b4386a6f1424c24edc
+      internalID: 833754992
       vertices: []
       indices: 
       edges: []
@@ -211,10 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_0: 234507135
-      idle_1: 558677437
-      idle_2: -1616708430
-      idle_3: -183801195
+      attack1_edited_0: 1052116261
+      attack1_edited_1: 2000206261
+      attack1_edited_2: -345278493
+      attack1_edited_3: -476980193
+      attack1_edited_4: -275045999
+      attack1_edited_5: 833754992
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

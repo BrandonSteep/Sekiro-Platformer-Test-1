@@ -81,7 +81,13 @@ namespace TarodevController
         private void HandleIdleSpeed()
         {
             var inputStrength = Mathf.Abs(_player.FrameInput.x);
-            _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
+            // _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
+            if(_player.FrameInput.x != 0){
+                _anim.SetBool("IsRunning", true);
+            }
+            else{
+                _anim.SetBool("IsRunning", false);
+            }
             _moveParticles.transform.localScale = Vector3.MoveTowards(_moveParticles.transform.localScale, Vector3.one * inputStrength, 2 * Time.deltaTime);
         }
 
