@@ -33,6 +33,8 @@ namespace TarodevController
 
         // change direction for attacks
         public bool facingRight = true;
+        [SerializeField]
+        private Transform attackPoint;
 
         private void Awake()
         {
@@ -73,8 +75,13 @@ namespace TarodevController
         {
             if (_player.FrameInput.x != 0) 
             {
-                _sprite.flipX = _player.FrameInput.x < 0;
-                facingRight = false;
+                bool isFacingLeft = _player.FrameInput.x < 0;
+                _sprite.flipX = isFacingLeft;
+
+                Vector3 attackPointPosition = attackPoint.localPosition;
+                attackPointPosition.x = Mathf.Abs(attackPointPosition.x) * (isFacingLeft ? -1: 1);
+                attackPoint.localPosition = attackPointPosition;
+                facingRight = !isFacingLeft;
             }
         }
 
