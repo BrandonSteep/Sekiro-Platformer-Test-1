@@ -166,7 +166,7 @@ namespace TarodevController
                 _isRunning = true;
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
             }
-            Debug.Log($"Is Running = {_isRunning}");
+            // Debug.Log($"Is Running = {_isRunning}");
         }
 
         #endregion
@@ -213,7 +213,6 @@ namespace TarodevController
     public interface IPlayerController
     {
         public event Action<bool, float> GroundedChanged;
-
         public event Action Jumped;
         public Vector2 FrameInput { get; }
     }
