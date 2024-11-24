@@ -34590,7 +34590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyShield: {fileID: 2663835752847831733, guid: f39627e6bc5d6ac4290d7a3f866ad9c6, type: 3}
-  cooldownTimer: 0.15
+  cooldownTimer: 0.25
   canAttack: 1
 --- !u!1 &8388403078740211964
 GameObject:
