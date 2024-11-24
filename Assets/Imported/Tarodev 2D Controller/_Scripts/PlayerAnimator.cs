@@ -31,6 +31,9 @@ namespace TarodevController
         private bool _grounded;
         private ParticleSystem.MinMaxGradient _currentGradient;
 
+        // change direction for attacks
+        public bool facingRight = true;
+
         private void Awake()
         {
             _source = GetComponent<AudioSource>();
@@ -68,13 +71,23 @@ namespace TarodevController
 
         private void HandleSpriteFlip()
         {
-            if (_player.FrameInput.x != 0) _sprite.flipX = _player.FrameInput.x < 0;
+            if (_player.FrameInput.x != 0) 
+            {
+                _sprite.flipX = _player.FrameInput.x < 0;
+                facingRight = false;
+            }
         }
 
         private void HandleIdleSpeed()
         {
             var inputStrength = Mathf.Abs(_player.FrameInput.x);
-            _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
+            // _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
+            if(_player.FrameInput.x != 0){
+                _anim.SetBool("IsRunning", true);
+            }
+            else{
+                _anim.SetBool("IsRunning", false);
+            }
             _moveParticles.transform.localScale = Vector3.MoveTowards(_moveParticles.transform.localScale, Vector3.one * inputStrength, 2 * Time.deltaTime);
         }
 
