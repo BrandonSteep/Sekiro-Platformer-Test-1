@@ -10,4 +10,12 @@ public class ScriptableVariable_int : ScriptableObject
     public int GetValue(){
         return value;
     }
+
+    public void SetValue(int valueToSet){
+        value = valueToSet;
+    }
+
+    public void AddToValue(int valueToAdd){
+        value += valueToAdd;
+    }
 }
