@@ -32,7 +32,7 @@ public class Mele : MonoBehaviour
         {
             // Debug.Log("We hit " + enemy.name);
             IStatus enemyStatus = enemy.gameObject.GetComponent<IStatus>();
-            enemyStatus.TakeDamage(1);
+            enemyStatus.TakeDamage(1, new Vector2(this.transform.position.x, this.transform.position.y));
         }
     }
 

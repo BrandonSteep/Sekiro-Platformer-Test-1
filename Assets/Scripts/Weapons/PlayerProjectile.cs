@@ -26,7 +26,7 @@ public class PlayerProjectile : MonoBehaviour
         if (( damageable & (1 << collision.gameObject.layer)) != 0)
         {
             IStatus otherStatus = collision.gameObject.GetComponent<IStatus>();
-            otherStatus.TakeDamage(1);
+            otherStatus.TakeDamage(1, new Vector2(this.transform.position.x, this.transform.position.y));
         }
         Destroy(gameObject);
     }

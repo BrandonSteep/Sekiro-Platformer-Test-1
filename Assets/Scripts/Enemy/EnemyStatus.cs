@@ -11,7 +11,7 @@ public class EnemyStatus : MonoBehaviour, IStatus
         currentHealth = stats.GetHealth();
     }
 
-    public void TakeDamage(int damageAmount){
+    public void TakeDamage(int damageAmount, Vector2 hitPosition){
         Debug.Log($"Taken {damageAmount} points of damage");
         currentHealth -= damageAmount;
         if(currentHealth <= 0){
