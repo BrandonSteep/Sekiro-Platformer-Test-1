@@ -1,6 +1,6 @@
 public interface IStatus
 {
-    public virtual void TakeDamage(int damageAmount){}
-
-    public virtual void heal(int healAmount){}
+    void TakeDamage(int damageAmount);
+    void Heal(int healAmount);
+    void Die();
 }
