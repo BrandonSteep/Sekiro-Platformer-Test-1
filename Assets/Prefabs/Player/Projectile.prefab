@@ -139,6 +139,6 @@ MonoBehaviour:
   speed: 8
   rb: {fileID: 1321759688665547192}
   lifetime: 5
-  damageable:
+  damageableLayers:
     serializedVersion: 2
     m_Bits: 64

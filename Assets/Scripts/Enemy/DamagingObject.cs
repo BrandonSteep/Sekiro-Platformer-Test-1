@@ -6,7 +6,7 @@ public class DamagingObject : MonoBehaviour
 {
     [SerializeField] private LayerMask damageableLayers;
     
-    void OnCollisionEnter2D(Collision2D){
+    void OnCollisionEnter2D(Collision2D collision){
         if ((damageableLayers & (1 << collision.gameObject.layer)) != 0)
         {
             IStatus otherStatus = collision.gameObject.GetComponent<IStatus>();
