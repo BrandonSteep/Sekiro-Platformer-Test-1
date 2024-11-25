@@ -9,6 +9,7 @@ public class PlayerProjectile : MonoBehaviour
     private Vector2 direction = Vector2.right;
     [SerializeField]
     private float lifetime = 5f;
+    [SerializeField] private LayerMask damageable;
 
     public void SetDirection(Vector2 newDirection)
     {
@@ -22,9 +23,10 @@ public class PlayerProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Enemy"){
-            IStatus enemyStatus = collision.gameObject.GetComponent<IStatus>();
-            enemyStatus.TakeDamage(1);
+        if (( damageable & (1 << collision.gameObject.layer)) != 0)
+        {
+            IStatus otherStatus = collision.gameObject.GetComponent<IStatus>();
+            otherStatus.TakeDamage(1);
         }
         Destroy(gameObject);
     }
