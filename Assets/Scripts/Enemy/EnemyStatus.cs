@@ -12,6 +12,7 @@ public class EnemyStatus : MonoBehaviour, IStatus
     }
 
     public void TakeDamage(int damageAmount){
+        Debug.Log($"Taken {damageAmount} points of damage");
         currentHealth -= damageAmount;
         if(currentHealth <= 0){
             Die();

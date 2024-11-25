@@ -22,6 +22,10 @@ public class PlayerProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "Enemy"){
+            IStatus enemyStatus = collision.gameObject.GetComponent<IStatus>();
+            enemyStatus.TakeDamage(1);
+        }
         Destroy(gameObject);
     }
 }
