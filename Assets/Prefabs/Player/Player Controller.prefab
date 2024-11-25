@@ -34466,6 +34466,7 @@ GameObject:
   - component: {fileID: 8388403078639015980}
   - component: {fileID: 8388403078639015968}
   - component: {fileID: 1295283779}
+  - component: {fileID: 546927376211891750}
   m_Layer: 0
   m_Name: Player Controller
   m_TagString: Untagged
@@ -34592,6 +34593,22 @@ MonoBehaviour:
   energyShield: {fileID: 2663835752847831733, guid: f39627e6bc5d6ac4290d7a3f866ad9c6, type: 3}
   cooldownTimer: 0.25
   canAttack: 1
+--- !u!114 &546927376211891750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991323459200370184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b742637aa1ee44f4eaf1e480b3744742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: {fileID: 11400000, guid: 8cb48365409967441b5c139af77e950e, type: 2}
+  currentHealth: {fileID: 11400000, guid: 38020fedf840da041a5a1c7540a9212d, type: 2}
+  canTakeDamage: 1
+  iFramesInSeconds: 0
 --- !u!1 &8388403078740211964
 GameObject:
   m_ObjectHideFlags: 0

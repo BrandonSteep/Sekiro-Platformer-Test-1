@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TarodevController
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu (menuName = "Stats/Player Stats")]
     public class ScriptableStats : ScriptableObject
     {
         [Header("LAYERS")] [Tooltip("Set this to the layer your player is on")]
