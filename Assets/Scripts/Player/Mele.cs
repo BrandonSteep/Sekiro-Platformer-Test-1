@@ -30,7 +30,7 @@ public class Mele : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies) 
         {
-            // Debug.Log("We hit " + enemy.name);
+            Debug.Log("We hit " + enemy.name);
             IStatus enemyStatus = enemy.gameObject.GetComponent<IStatus>();
             enemyStatus.TakeDamage(1, new Vector2(this.transform.position.x, this.transform.position.y));
         }
