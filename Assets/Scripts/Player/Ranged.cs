@@ -10,15 +10,20 @@ public class Ranged : MonoBehaviour
     public Transform firePoint;
     public LayerMask enemyLayers;
     public GameObject projectilePrefab;
+    [SerializeField] private Animator anim;
+
+    void Awake(){
+        anim = GetComponent<Animator>();
+    }
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.E)) 
         {
-            RangedAttack();
+            anim.SetTrigger("AttackRanged");
         }
     }
-    private void RangedAttack() 
+    public void RangedAttack() 
     {
         // avoids errors
         if (firePoint == null) return;

@@ -270,34 +270,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9309343f3fbafc744847cfbc9340e146, type: 3}
---- !u!1 &4880641793370287588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8388403080499749046, guid: 9309343f3fbafc744847cfbc9340e146, type: 3}
-  m_PrefabInstance: {fileID: 4022310343559089490}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &342288225150903040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4880641793370287588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2ed2cc34be8bf40b7e495e92a892f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  firePoint: {fileID: 4880641794580474240}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  projectilePrefab: {fileID: 1321759688665547204, guid: f80707f1d2ea758418befe13f146a81a, type: 3}
---- !u!4 &4880641794580474240 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8388403079558259922, guid: 9309343f3fbafc744847cfbc9340e146, type: 3}
-  m_PrefabInstance: {fileID: 4022310343559089490}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6256685528461495125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6991323459200370183, guid: 9309343f3fbafc744847cfbc9340e146, type: 3}
