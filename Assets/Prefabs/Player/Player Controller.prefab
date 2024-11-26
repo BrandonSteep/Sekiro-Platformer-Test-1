@@ -34724,4 +34724,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   projectilePrefab: {fileID: 1321759688665547204, guid: f80707f1d2ea758418befe13f146a81a, type: 3}
-  anim: {fileID: 0}
+  anim: {fileID: 8388403080499749035}
